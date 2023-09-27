@@ -3,7 +3,7 @@ const { Sprite } = Phaser.Physics.Arcade;
 
 /* const img = Phaser.Physics.Arcade.Image; */
 
-export class Enemy extends Sprite {
+export class Enemy4 extends Sprite {
     speed = 100;
 
     constructor(level,x,y,texture){

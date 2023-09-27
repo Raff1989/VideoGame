@@ -3,6 +3,8 @@ import { Bullet } from "./Bullet.js";
 //destructoring assignement
 const { Sprite } = Phaser.Physics.Arcade;
 
+
+
 /* const img = Phaser.Physics.Arcade.Image; */
 
 export class Player extends Sprite {
@@ -10,6 +12,7 @@ export class Player extends Sprite {
 
   constructor(level, x, y, texture) {
     super(level, x, y, texture);
+
 
     level.add.existing(this);
     level.physics.world.enableBody(this);
@@ -48,5 +51,8 @@ export class Player extends Sprite {
       let bullet = new Bullet(level, this.x, this.y, "bullet");
       level.physics.moveTo(bullet, pointer.worldX, pointer.worldY,500);
     });
-  }
-}
+        
+
+}}
+
+

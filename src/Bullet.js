@@ -7,4 +7,7 @@ export class Bullet extends Image{
         level.add.existing(this);
         level.bullets.add(this);
     }
+
+    
 }
+
